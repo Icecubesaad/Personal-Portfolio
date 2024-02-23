@@ -33,7 +33,7 @@ const About = () => {
       <div className="flex flex-row lg:gap-20 gap-5 justify-center">
         <div className="flex flex-col items-center justify-center gap-2">
           <div>
-            <Image src="/Next.svg" alt="nextjs" height={responsive} width={responsive} />
+            <Image src="/next.svg" alt="nextjs" height={responsive} width={responsive} />
           </div>
           <div className="text_fancy4">Next.js</div>
         </div>
