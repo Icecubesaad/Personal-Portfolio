@@ -19,7 +19,7 @@ const Homepage = () => {
   //     };
   //   }, []);
   return (
-    <div className="w-[80%]  pl-24 pt-14 flex flex-col sm:w-full responsive_c">
+    <div className="w-[80%] pl-24 flex justify-center flex-col lg:w-full responsive_c">
       <div className="sm:w-full">
         <p className="text_fancy2 text-[1.1rem] text-[#35A29F]">
           Hi, my name is

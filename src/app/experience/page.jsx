@@ -1,6 +1,6 @@
 const experience=()=>{
     return(
-        <div className="w-[80%] pl-24 pt-14 flex flex-col overflow-y-scroll custom-scrollbar pb-20 responsive_c">
+        <div className="w-[80%] pl-24 pt-14 flex flex-col overflow-y-scroll custom-scrollbar pb-20 ">
             <h1 className="text_fancy3">Experience</h1>
             <article>
             <h2 className="text_fancy5 mt-3">Frontend Developer (5/4/23-7/8/23)</h2>
