@@ -1,7 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BenchNine:wght@700&family=Kode+Mono:wght@400..700&family=Montserrat:wght@500&family=Nunito:wght@300;500&family=Roboto+Condensed:wght@700&family=Roboto+Flex:opsz,wght@8..144,500;8..144,1000&family=Roboto:wght@500;700&family=Source+Code+Pro:wght@500&family=Teko:wght@500&family=Ubuntu:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.text_fancy {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+.text_fancy2 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.text_fancy3 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.text_fancy4 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.text_fancy5 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.text_fancy6 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.text_heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.contact_text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.contact_form {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+.sidebar {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +82,116 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent; /* Background color of the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  /* background-color: grey; Color of the scrollbar thumb */
+  border: 2px solid transparent; /* Border of the scrollbar thumb */
+  border-radius: 5px; /* Border radius of the scrollbar thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  /* background-color: darkgrey; Hover color of the scrollbar thumb */
+}
+.extended_card {
+  width: 40%;
+  transition: 300ms;
+  animation: Extend 300ms forwards;
+}
+@keyframes Extend {
+  from {
+    width: 40%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.extended_card.active {
+  width: 100%;
+  transition: 300ms;
+  animation: shrink 300ms forwards;
+}
+@keyframes shrink {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 40%;
+  }
+}
+.hidden_card {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  animation: opacity_show 800ms forwards;
+}
+@keyframes opacity_show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hidden_card.active {
+  display: none;
+  opacity: 1;
+}
+@keyframes opacity_hide {
+  from {
+    opacity: 1;
+    display: flex;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+.heading_contact {
+  display: none;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .text_heading {
+    font-size: 1.5rem;
+  }
+  .heading_contact {
+    display: block;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .responsive_c {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .reponsive_ab {
+    width: 90%;
+  }
+  .text_fancy5 {
+    font-size: 1.5rem;
+  }
+  .reponsive_con {
+    display: none;
+  }
+}
+.responsive_c {
+}
+.reponsive_ab {
+}
+.reponsive_con {
 }
