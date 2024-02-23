@@ -7,24 +7,29 @@ const Sidebar = ({setopen}) => {
             <CloseIcon sx={{fontSize:50}}/>
         </button>
       <div className=" flex flex-col gap-10 mt-16">
-        <div>
-          <Link onClick={()=>{setopen(false)}} className="sidebar" href="/about">
-            <span className="text-[#35A29F]">01.</span> about
+      <div>
+          <Link className="text_fancy" href="/">
+            <span className="text-[#35A29F]">01.</span> home
           </Link>
         </div>
         <div>
-          <Link onClick={()=>{setopen(false)}} className="sidebar" href="/projects">
-            <span className="text-[#35A29F]">02.</span> projects
+          <Link className="text_fancy" href="/about">
+            <span className="text-[#35A29F]">02.</span> about
           </Link>
         </div>
         <div>
-          <Link onClick={()=>{setopen(false)}} className="sidebar" href="/experience">
-            <span className="text-[#35A29F]">03.</span> experience
+          <Link className="text_fancy" href="/projects">
+            <span className="text-[#35A29F]">03.</span> projects
           </Link>
         </div>
-        <div className="sidebar">
-          <Link onClick={()=>{setopen(false)}} href="/contact">
-            <span className="text-[#35A29F]">04.</span> contact
+        <div>
+          <Link className="text_fancy" href="/experience">
+            <span className="text-[#35A29F]">04.</span> experience
+          </Link>
+        </div>
+        <div className="text_fancy">
+          <Link href="/contact">
+            <span className="text-[#35A29F]">05.</span> contact
           </Link>
         </div>
         <div className="flex items-center">
