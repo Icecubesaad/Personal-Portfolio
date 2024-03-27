@@ -8,7 +8,7 @@ function Header() {
   const [open, setopen] = useState(false);
   useEffect(() => {
     handleResize()
-    function handleResize() {
+    function handleResize() { 
       if (window.innerWidth < 600) {
         setResponsive(true);
       } else {
