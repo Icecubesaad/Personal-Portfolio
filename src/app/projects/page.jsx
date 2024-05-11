@@ -12,32 +12,30 @@ const Projects = () => {
         projects according to their complexity and the corresponding levels of
         expertise I{"'"}ve acquired.
       </p>
-      <h1 className="text_fancy3 text-[#8c93ac]">Beginner</h1>
-      <h1 className="text_fancy5 text-[#8c93ac]">
-        mouse-pad E-commerce website
-      </h1>
-      <div className="flex flex-col gap-5">
-        <div className="flex flex-col items-center lg:flex-row justify-between mt-5 lg:gap-0 gap-3">
-          <Image src="/beginner.png" width={600} height={250} alt="project" />
-          <Image
-            src="/beginnerPhone.png"
-            width={200}
-            height={350}
-            alt="project"
-          />
+      <h1 className="text_fancy3 text-[#8c93ac] mt-5">Advanced</h1>
+      <h1 className="text_fancy5 text-[#8c93ac] mt-8">Twitter Clone</h1>
+      <div className="flex flex-col gap-8">
+        <div className="flex justify-center items-center mt-5">
+          <Image src="/twitter.png" width={700} height={300} alt="project" />
         </div>
         <div>
-          <h1 className="text_fancy4">Description :</h1>
-          <p className="text_fancy4">
-            During the nascent stages of my web development journey, I crafted a
-            mouse-pad E-commerce Website using only HTML, CSS, and JavaScript.
-            Motivated by a desire to challenge myself after acquiring
-            fundamental proficiency in these languages, I embarked on this
-            project to deepen my understanding and practical application of web
-            development principles.
+          <h1 className="text_fancy4 text-[#8c93ac] font-bold">
+            Description :
+          </h1>
+          <p className="text_fancy4 text-justify">
+            At an advanced level in full-stack development, I{"'"}ve crafted an
+            intricate Twitter clone using the MERN Stack. This project showcases
+            my mastery in backend development, robust user authentication, and
+            seamless integration of advanced features such as posting tweets
+            with images, real-time updates, and dynamic interactions like liking
+            and retweeting. It stands as a testament to my expertise in the MERN
+            ecosystem and my ability to build scalable, feature-rich
+            applications.
           </p>
-          <h1 className="text_fancy4">Technologies Used :</h1>
-          <p className="text_fancy4">HTML, CSS, Javascript</p>
+          <h1 className="text_fancy4 text-[#8c93ac]">Technologies Used :</h1>
+          <p className="text_fancy4">
+            Next.js, Node.js, Express.js, MongoDB, Tailwind, MaterialUI
+          </p>
         </div>
       </div>
       <h1 className="text_fancy3 text-[#8c93ac] mt-8">Intermediate</h1>
@@ -89,6 +87,34 @@ const Projects = () => {
           </p>
         </div>
       </div>
+      <h1 className="text_fancy3 text-[#8c93ac]">Beginner</h1>
+      <h1 className="text_fancy5 text-[#8c93ac]">
+        mouse-pad E-commerce website
+      </h1>
+      <div className="flex flex-col gap-5">
+        <div className="flex flex-col items-center lg:flex-row justify-between mt-5 lg:gap-0 gap-3">
+          <Image src="/beginner.png" width={600} height={250} alt="project" />
+          <Image
+            src="/beginnerPhone.png"
+            width={200}
+            height={350}
+            alt="project"
+          />
+        </div>
+        <div>
+          <h1 className="text_fancy4">Description :</h1>
+          <p className="text_fancy4">
+            During the nascent stages of my web development journey, I crafted a
+            mouse-pad E-commerce Website using only HTML, CSS, and JavaScript.
+            Motivated by a desire to challenge myself after acquiring
+            fundamental proficiency in these languages, I embarked on this
+            project to deepen my understanding and practical application of web
+            development principles.
+          </p>
+          <h1 className="text_fancy4">Technologies Used :</h1>
+          <p className="text_fancy4">HTML, CSS, Javascript</p>
+        </div>
+      </div>
       <h1 className="text_fancy5 text-[#8c93ac] mt-8">BookStore app</h1>
       <div className="flex flex-col gap-8">
         <div className="flex justify-center items-center mt-5">
@@ -105,32 +131,6 @@ const Projects = () => {
             sharing of recipes. With a focus on secure authentication and
             efficient data management, it underscores my proficiency in
             full-stack development within the dynamic MERN ecosystem.
-          </p>
-          <h1 className="text_fancy4 text-[#8c93ac]">Technologies Used :</h1>
-          <p className="text_fancy4">
-            React.js, Node.js, Express.js, MongoDB, Tailwind, MaterialUI
-          </p>
-        </div>
-      </div>
-      <h1 className="text_fancy3 text-[#8c93ac] mt-5">Advanced</h1>
-      <h1 className="text_fancy5 text-[#8c93ac] mt-8">Twitter Clone</h1>
-      <div className="flex flex-col gap-8">
-        <div className="flex justify-center items-center mt-5">
-          <Image src="/twitter.png" width={700} height={300} alt="project" />
-        </div>
-        <div>
-          <h1 className="text_fancy4 text-[#8c93ac] font-bold">
-            Description :
-          </h1>
-          <p className="text_fancy4 text-justify">
-            At an advanced level in full-stack development, I{"'"}ve crafted an
-            intricate Twitter clone using the MERN Stack. This project showcases
-            my mastery in backend development, robust user authentication, and
-            seamless integration of advanced features such as posting tweets
-            with images, real-time updates, and dynamic interactions like liking
-            and retweeting. It stands as a testament to my expertise in the MERN
-            ecosystem and my ability to build scalable, feature-rich
-            applications.
           </p>
           <h1 className="text_fancy4 text-[#8c93ac]">Technologies Used :</h1>
           <p className="text_fancy4">
