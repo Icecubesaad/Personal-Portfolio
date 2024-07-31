@@ -29,11 +29,11 @@ const Homepage = () => {
           I code dreams into Reality.
         </p>
         <span className="text-[#777b8b] lg:w-[60%] inline-block mt-2 font-medium reponsive_ab">
-          Mastering the MERN(MongoDB, Express.js, React.js and Next.js, Node.js)
+          Mastering the MERN (MongoDB, Express.js, React.js and Next.js, Node.js)
           stack to sculpt exquisite web creations that captivate and innovate.
         </span>
       </div>
-      <div className="w-[100%] lg:w-[200px] flex justify-center  mt-16 h-[80px]">
+      <div className="w-[100%] lg:w-[200px] flex mt-16 h-[80px]">
         <Link
           href="/about"
           className="border-[2px] hover:bg-[#35a29F] hover:text-black cursor-pointer transition-all  text-[#35A29F] flex justify-center items-center h-[60px] font-bold border-[#35A29F] rounded-md w-auto pl-6 pr-6 "

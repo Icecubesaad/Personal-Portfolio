@@ -1,34 +1,43 @@
 import Link from "next/link";
 import CloseIcon from '@mui/icons-material/Close';
 const Sidebar = ({setopen}) => {
+  const handleClose = ()=>{
+    const element = document.getElementById("sidebar")
+    if(element.classList.contains("active")){
+      element.classList.remove("active");
+    }
+    else{
+      element.classList.remove("active")
+    }
+  }
   return (
-    <div className="w-[80%] h-screen bg-[#0f192d] absolute right-0 top-0 flex flex-col z-[99999] pl-4 ">
-        <button onClick={()=>{setopen(false)}} className=" flex flex-row-reverse pt-6 pr-4">
+    <div id="sidebar" className="sidebar h-screen bg-[#0f192d] absolute right-0 top-0 flex flex-col z-[99999] pl-4 overflow-hidden">
+        <button onClick={handleClose} className=" flex flex-row-reverse pt-6 pr-4">
             <CloseIcon sx={{fontSize:50}}/>
         </button>
       <div className=" flex flex-col gap-10 mt-16">
       <div>
-          <Link className="text_fancy" href="/">
+          <Link className="text_fancy" href="/" onClick={handleClose}>
             <span className="text-[#35A29F]">01.</span> home
           </Link>
         </div>
         <div>
-          <Link className="text_fancy" href="/about">
+          <Link className="text_fancy" href="/about" onClick={handleClose}>
             <span className="text-[#35A29F]">02.</span> about
           </Link>
         </div>
         <div>
-          <Link className="text_fancy" href="/projects">
+          <Link className="text_fancy" href="/projects" onClick={handleClose}>
             <span className="text-[#35A29F]">03.</span> projects
           </Link>
         </div>
         <div>
-          <Link className="text_fancy" href="/experience">
+          <Link className="text_fancy" href="/experience" onClick={handleClose}>
             <span className="text-[#35A29F]">04.</span> experience
           </Link>
         </div>
         <div className="text_fancy">
-          <Link href="/contact">
+          <Link href="/contact" onClick={handleClose}>
             <span className="text-[#35A29F]">05.</span> contact
           </Link>
         </div>

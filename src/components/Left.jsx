@@ -25,9 +25,9 @@ function Left() {
     !Responsive?
     <div className="w-[10%] h-[calc(100vh-70px)] flex justify-end flex-col items-center gap-4">
         <div className="flex flex-col">
-        <div><GitHubIcon sx={{fontSize:38}}/></div>
-        <div><LinkedInIcon sx={{fontSize:38}}/></div>
-        <div><TwitterIcon sx={{fontSize:38}}/></div>
+        <a href='https://github.com/Icecubesaad'><GitHubIcon sx={{fontSize:38}}/></a>
+        <a href='https://www.linkedin.com/in/muhammad-saad-ur-rehman-4aa938284/'><LinkedInIcon sx={{fontSize:38}}/></a>
+        <a href=''><TwitterIcon sx={{fontSize:38}}/></a>
         </div>
         <div className="w-[1px] h-[150px] bg-[#35A29F]">
 

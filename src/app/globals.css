@@ -195,3 +195,34 @@ body {
 }
 .reponsive_con {
 }
+
+.sidebar{
+  width: 0;
+  display: none;
+  animation: close 800ms forwards;
+}
+.sidebar.active{
+  width: 80%;
+  display: flex;
+  animation: openSidebar 800ms forwards;
+}
+@keyframes openSidebar {
+  from{
+    width: 0;
+    display: none;
+  }
+  to{
+    width: 80%;
+    display: flex;
+  }
+}
+@keyframes close {
+  from{
+    width: 80%;
+    display: flex;
+  }
+  to{
+    width: 0;
+    display: none;
+  }
+}

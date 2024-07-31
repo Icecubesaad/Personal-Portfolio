@@ -5,7 +5,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useEffect, useState } from "react";
 function Header() {
   const [Responsive, setResponsive] = useState(false);
-  const [open, setopen] = useState(false);
   useEffect(() => {
     handleResize()
     function handleResize() { 
@@ -22,6 +21,15 @@ function Header() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  const handleOpen=()=>{
+    const element = document.getElementById("sidebar");
+    if(element.classList.contains("active")){
+      return;
+    }
+    else{
+      element.classList.add("active")
+    }
+  }
   return !Responsive ? (
     <div className="w-full items-center pr-[50px] h-[70px] bg-[#0f192d] flex flex-row-reverse">
       <div className="flex flex-row gap-[30px] h-full items-center">
@@ -64,9 +72,9 @@ function Header() {
     </div>
   ) : (
     <>
-   { open?<Sidebar setopen={setopen} />:<></>}
+   <Sidebar />
     <div className="flex h-[70px] bg-[#0f192d] flex-row-reverse pr-8">
-      <button onClick={()=>setopen(true)}>
+      <button onClick={handleOpen}>
         <MenuIcon sx={{ fontSize: 40 }} />
       </button>
     </div>
