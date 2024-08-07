@@ -60,7 +60,7 @@ function Header() {
         </div>
         <div className="flex items-center">
           <Link
-            download="saad_resume"
+            download="resume"
             href="/resume.pdf"
             target="_blank"
             className="w-auto pl-4 pr-4 h-[40px] border-[2px] border-[#35A29F] rounded-md text-[#35A29F] text_fancy hover:bg-[#35a29F] transition-all font-bold flex justify-center items-center hover:text-black cursor-pointer"
