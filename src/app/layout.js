@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header/>
-        <div className="h-[calc(100vh-70px)] w-full bg-[#0f192d] flex flex-row overflow-hidden">
+        <div className="h-auto w-full bg-[#0f192d] flex flex-row overflow-x-hidden">
         <Left/>
         {children}
         <Right/>

@@ -2,8 +2,8 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Snackbar from "@mui/material/Snackbar";
-const Contact = () => {
-  const form = useRef();
+function Contact() {
+    const form = useRef();
   const [open, setopen] = useState(false);
   const handleClose = () => {
     setopen(false);
@@ -31,16 +31,16 @@ const Contact = () => {
       );
   };
   return (
-    <div className="w-[80%] pl-24 pt-10 lg:pt-14 flex flex-col overflow-y-scroll custom-scrollbar pb-20 responsive_c ">
+    <div id="contact" className="w-full pl-24 pt-10 lg:pt-14 flex flex-col overflow-y-scroll custom-scrollbar pb-20 responsive_c ">
       <h1 className="heading_contact">Contact Us</h1>
       <div className=" flex flex-row items-center ">
         <div className=" w-[100%] flex flex-col gap-3 reponsive_con">
           <h1 className="contact_text text-[#35A29F]">Email</h1>
           <p className="contact_text">m.saadurrehmanweb@gmail.com</p>
           <h1 className="contact_text text-[#35A29F]">Website</h1>
-          <p className="contact_text">smth.com</p>
+          <p className="contact_text">https://personal-portfolio-saad.vercel.app/</p>
           <h1 className="contact_text text-[#35A29F]">Phone</h1>
-          <p className="contact_text">0302 4083 483</p>
+          <p className="contact_text">+92 302 4083 483</p>
           <h1 className="contact_text text-[#35A29F]">Address</h1>
           <p className="contact_text">
             House no. 651, block no. 29, Mughalpura Lahore
@@ -51,23 +51,23 @@ const Contact = () => {
             <div className="flex flex-col lg:flex-row justify-center lg:gap-0 gap-5 w-[100%]">
               <div className="w-[100%]">
                 <input
-                name="user_name"
-                  className="border-[1px] outline-none contact_form rounded-lg bg-white text-[#52555f] placeholder:text-[#52555f] pl-2 w-full lg:w-[80%] font-bold h-[50px]"
+                  name="user_name"
+                  className="border-[1px] border-transparent outline-none contact_form rounded-lg bg-slate-950 text-white placeholder:text-white pl-2 w-full lg:w-[80%]  h-[50px] nunito placeholder:nunito "
                   placeholder="Name"
                 />
               </div>
               <div className="w-[100%]">
                 <input
-                name="user_email"
-                  className="border-[1px] contact_form rounded-lg bg-white text-[#52555f] placeholder:text-[#52555f] pl-2 lg:w-[80%] w-full font-bold h-[50px] outline-none"
+                  name="user_email"
+                  className="border-[1px] contact_form rounded-lg bg-slate-950 text-white placeholder:text-white pl-2 lg:w-[80%] w-full font-bold h-[50px] border-transparent outline-none nunito placeholder:nunito"
                   placeholder="Email"
                 />
               </div>
             </div>
             <div>
               <textarea
-              name="message"
-                className="h-[300px] outline-none contact_form font-bold border-[1px] rounded-lg w-full lg:w-[90%] bg-white text-[#52555f] placeholder:text-[#52555f] p-4"
+                name="message"
+                className="h-[300px] outline-none contact_form font-bold border-[1px] rounded-lg w-full lg:w-[90%] bg-slate-950 text-white placeholder:text-white p-4 border-transparent"
                 placeholder="Message"
               />
             </div>
@@ -75,7 +75,7 @@ const Contact = () => {
               <input
                 value="submit"
                 type="submit"
-                className="w-[50%] pl-4 pr-4 h-[50px] border-[2px] border-[#35A29F] rounded-md text-[#35A29F] text_fancy transition-all hover:bg-[#35a29F] hover:text-black cursor-pointer"
+                className="w-[50%] pl-4 pr-4 h-[50px] border-[2px] border-[#35A29F] rounded-md text-[#35A29F] text_fancy transition-all hover:bg-[#35a29F] hover:text-black cursor-pointer outline-none"
               />
             </div>
           </div>
@@ -89,5 +89,6 @@ const Contact = () => {
       />
     </div>
   );
-};
+}
+
 export default Contact;
