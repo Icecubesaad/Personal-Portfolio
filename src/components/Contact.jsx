@@ -39,12 +39,6 @@ function Contact() {
           <p className="contact_text">m.saadurrehmanweb@gmail.com</p>
           <h1 className="contact_text text-[#35A29F]">Website</h1>
           <p className="contact_text">https://personal-portfolio-saad.vercel.app/</p>
-          <h1 className="contact_text text-[#35A29F]">Phone</h1>
-          <p className="contact_text">+92 302 4083 483</p>
-          <h1 className="contact_text text-[#35A29F]">Address</h1>
-          <p className="contact_text">
-            House no. 651, block no. 29, Mughalpura Lahore
-          </p>
         </div>
         <form ref={form} className="w-[100%]" onSubmit={SubmitForm}>
           <div className="flex flex-col gap-6 w-[100%]">

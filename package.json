@@ -16,6 +16,7 @@
     "@mui/material": "^5.15.10",
     "emailjs": "^4.0.3",
     "next": "14.1.0",
+    "portfolio": "file:",
     "react": "^18",
     "react-dom": "^18"
   },

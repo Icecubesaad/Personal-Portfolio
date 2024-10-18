@@ -86,6 +86,32 @@ function Projects() {
           </div>
         </div>
       </div>
+      <div className="flex md:flex-row flex=col items-center gap-10 mt-20">
+        <div className="flex transform transition-transform duration-300 hover:scale-110 origin-center md:flex-row bg-slate-950 w-[90%] h-[500px] md:w-[90%]">
+          <div className="flex flex-col h-full w-full">
+            <div className="pl-5 mt-6 pr-5">
+              <h1 className="nunito text-xl font-[700]">Source Arabia</h1>
+              <p>
+                An E-commerce Application made for exhange of all sorts of material in stocks. Which is powered by next.js and express.js. This application utilizes redux for the states exhange across the screens and possesses features like Authentication, Cart, Payment and many more. 
+              </p>
+            </div>
+            <div className=" pl-5 pr-5 w-full flex absolute bottom-3">
+            <button className=" p-1 w-[50%] h-[50px] bg-blue-600 border-[1px] border-transparent rounded-lg">
+              <a target="_blank" href="https://source-arabia.vercel.app/Home">Live Site</a>
+            </button>
+          </div>
+          </div>
+          <div className="w-[80%] hidden md:flex justify-center items-center">
+            <Image
+              src="/source-arabia.jpg"
+              alt="uplift"
+              width={750}
+              height={800}
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
